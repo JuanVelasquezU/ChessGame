@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/fondo.jpg);
+    height: 100vh;
+}
+
+.tablerito{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.triunfo{
+    width: 350px;
+    height: 600px;
+    margin-right: 40px;
+}
+
+.cont-tablero{
+    width: 560px;
+    height: 560px;
+    margin-top: 40px ;
+    box-shadow: 0px 0px 6px 8px rgb(83, 41, 6),
+                0px 0px 0px 16px rgb(6, 55, 83);
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.cont-tablero .tab-fila{
+    display: flex;
+}
+
+
+.cont-tablero .tab-fila .tab-col{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    user-select: none;
+    font-size: 55px;
+    color: rgb(9, 31, 46);
+    text-shadow: 0px .5px rgb(172, 91, 16);
+}
+
+.cont-tablero .tab-fila .black{
+    background-color: rgb(216, 180, 81);
+}
+puntaje__a{}
+
+.puntaje{
+
+	background-color: rgb(216, 180, 81); 
+	border-radius: 25px;
+	color: #FAF8EF;
+	display: inline-block;
+	font-size: 1.5em;
+	margin: 10px 25px;
+	text-align: center;
+	margin-bottom: 10px;
+	width: 140px;
+}
+.puntaje p{
+	margin-top: 10px;
+}
+.indicadores{
+display: flex;
+justify-content: center;
+
+}
+
+.titulos{
+    text-align: center;
+    color: rgb(21, 100, 21);
+    font-size: 40px;
+}
+
+.logocoder{
+    display: flex;
+    justify-content: center;
+}
+
+.imagencoder{
+    width: 400px;
+    height: 200px;
+    
+}
+
+.colorfondo{
+    background-color: rgb(20, 133, 16);
+}
+
+.colortiempo{
+    background-color: brown;
+}
+
+.subtitulos{
+    text-align: center;
+    color: rgb(21, 100, 21);
+    font-size: 30px;
+}
+
+.colorfondo1{
+    background-color: rgb(20, 133, 16);
+}

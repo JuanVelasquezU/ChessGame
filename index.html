@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Juego Js Juan Velasquez </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1 class="titulos">CHESSGAME</h1>
+        <h2 class="subtitulos">toca la casilla correcta- tienes 30 segundos</h2>
+  
+        
+    </div>
+    <div class="indicadores">
+        <div class="puntaje colorfondo1">
+            <p>Participante:</p>
+            <p id="nombre"></p>
+        </div>
+        <div class="puntaje colorfondo">
+            <p>Encuentra:</p>
+            <p id="encuentra">3</p>
+        </div>
+        <div class="puntaje puntajerojo">
+            <p class="aciertos">Puntos</p>
+            <p id="movimiento">0</p>
+        </div>
+        <div class="puntaje colortiempo">
+            <p>Tiempo</p>
+            <p id="tiempo"><span id="minutos">00</span>:<span id="segundos">00</span></p>
+        </div>
+    </div>
+
+<div class="tablerito">
+
+    <img class="triunfo" src="img/pensador.png" alt="">
+
+    <div class="cont-tablero">
+
+        <!-- fila 1 -->
+        <div class="tab-fila"> 
+            <div id="a8"  class= "clic tab-col celda"> &#9820</div>
+            <div id="b8"  class= "clic tab-col black">&#9822</div>
+            <div id="c8"   class="clic tab-col">&#9821 </div>
+            <div id="d8"   class="clic tab-col black">&#9819</div>
+            <div id="e8"   class="clic tab-col"> &#9818</div>
+            <div id="f8"   class="clic tab-col black">&#9821 </div>
+            <div id="g8"   class="clic tab-col"> &#9822</div>
+            <div id="h8"   class="clic tab-col black">&#9820 </div>
+        </div>
+
+        <!-- fila2 -->
+        <div class="tab-fila"> 
+            <div id="a7"   class="clic tab-col black"> &#9823 </div>
+            <div id="b7"   class="clic tab-col ">&#9823</div>
+            <div id="c7"   class="clic tab-col black"> &#9823  </div>
+            <div id="d7"  class= "clic tab-col ">&#9823</div>
+            <div id="e7"  class= "clic tab-col black"> &#9823  </div>
+            <div id="f7"  class= "clic tab-col ">&#9823</div>   
+            <div id="g7"  class= "clic tab-col black">&#9823</div>
+            <div id="h7"  class= "clic tab-col">&#9823 </div>
+        </div>
+
+        <!-- fila 3 -->
+        <div class="tab-fila">
+            <div id="a6"  class="clic tab-col"></div>
+            <div id="b6"  class="clic tab-col black"></div>
+            <div id="c6"  class="clic tab-col"></div>
+            <div id="d6"  class="clic tab-col black"></div>
+            <div id="e6"  class="clic tab-col"></div>
+            <div id="f6"  class="clic tab-col black"></div>
+            <div id="g6"  class="clic tab-col"></div>
+            <div id="h6"  class="clic tab-col black"></div>
+        </div>
+
+        <!-- fila4 -->
+        <div class="tab-fila">
+            <div id="a5"  class="clic tab-col black"></div>
+            <div id="b5"  class="clic tab-col "></div>
+            <div id="c5"  class="clic tab-col black"></div>
+            <div id="d5"  class="clic tab-col "></div>
+            <div id="e5"  class="clic tab-col black"></div>
+            <div id="f5"  class="clic tab-col "></div>
+            <div id="g5"  class="clic tab-col black"></div>
+            <div id="h5"  class="clic tab-col"></div>
+        </div>
+
+        <!-- fila5  -->
+        <div class="tab-fila">
+            <div id="a4"  class="clic tab-col"></div>
+            <div id="b4"  class="clic tab-col black"></div>
+            <div id="c4"  class="clic tab-col"></div>
+            <div id="d4"  class="clic tab-col black"></div>
+            <div id="e4"  class="clic tab-col"></div>
+            <div id="f4"  class="clic tab-col black"></div>
+            <div id="g4"  class="clic tab-col"></div>
+            <div id="h4"  class="clic tab-col black"></div>
+        </div>
+
+        <!--fila 6 -->
+        <div class="tab-fila">
+            <div id="a3"  class="clic tab-col black"></div>
+            <div id="b3"  class="clic tab-col "></div>
+            <div id="c3"  class="clic tab-col black"></div>
+            <div id="d3"  class="clic tab-col "></div>
+            <div id="e3"  class="clic tab-col black"></div>
+            <div id="f3"  class="clic tab-col "></div>
+            <div id="g3"  class="clic tab-col black"></div>
+            <div id="h3"  class="clic tab-col"></div>
+        </div>
+
+        <!-- fila 7 -->
+        <div class="tab-fila"> 
+            <div id="a2"  class="clic tab-col">	&#9817</div>
+            <div id="b2"  class="clic tab-col black">&#9817</div>
+            <div id="c2"  class="clic tab-col">&#9817</div>
+            <div id="d2"  class="clic tab-col black">&#9817</div>
+            <div id="e2"  class="clic tab-col">&#9817</div>
+            <div id="f2"  class="clic tab-col black">&#9817</div>
+            <div id="g2"  class="clic tab-col">&#9817</div>
+            <div id="h2"  class="clic tab-col black">&#9817</div>
+        </div>
+
+        <!-- fila 8 --> 
+        <div class="tab-fila">
+            <div id="a1"  class="clic tab-col black"> &#9814</div>
+            <div id="b1"  class="clic tab-col "> &#9816 </div>
+            <div id="c1"  class="clic tab-col black">&#9815</div>
+            <div id="d1"  class="clic tab-col ">&#9813</div>
+            <div id="e1"  class="clic tab-col black">&#9812</div>
+            <div id="f1"  class="clic tab-col ">&#9815</div>
+            <div id="g1"  class="clic tab-col black">&#9816 </div>
+            <div id="h1"  class="clic tab-col">&#9814</div>
+        </div>
+
+    </div>
+
+   
+    
+
+   
+
+</div>
+
+
+
+    <div class="logocoder">
+        <img class="imagencoder" src="img/coder.png" alt="coderhouse">
+
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
